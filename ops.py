@@ -9,3 +9,6 @@ def multiply(x,y):
 
 def divide(x,y):
     return x/y
+
+remainder = divide (10,2)
+print ('RESULT = '  + str(remainder))    
