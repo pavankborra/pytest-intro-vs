@@ -24,10 +24,10 @@ def getZipcodeDetails(zipcode):
         state_name = data['places'][0]['state']    
         state_code = data['places'][0]['state abbreviation']  
     
-        # print("Country:", country)
-        # print("State:", state_name)
-        # print("State Code:", state_code)
-        # print("Place name:", place_name)
+        print("Country:", country)
+        print("State:", state_name)
+        print("State Code:", state_code)
+        print("Place name:", place_name)
 
         result = country + '||' + state_name + '||' + place_name
         return result
