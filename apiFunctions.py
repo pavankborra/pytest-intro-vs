@@ -1,5 +1,7 @@
 import requests
 import os
+import time
+
 #def BASE_URL = "https://api.zippopotam.us/us/"
 
 def getZipcodeDetails(zipcode):
@@ -8,6 +10,7 @@ def getZipcodeDetails(zipcode):
 # zipcode = input("Enter a zipcode: ")
 #zipcode = "66614"
     requests_url = f"{BASE_URL}{zipcode}"
+    time.sleep(15) # 15 secs sleep to test from jenkins
     response = requests.get(requests_url)
 
 # This can be used to test the api call or uncomment this to see how the info below gets pulled from the API
